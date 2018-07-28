@@ -1,47 +1,36 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
-  DTS:CreationDate="7/27/2018 2:54:33 PM"
-  DTS:CreationName="SSIS.Package.3"
-  DTS:CreatorComputerName="L739148P"
-  DTS:CreatorName="TOWER\ssharma2"
-  DTS:DTSID="{0B7EEF25-3705-4E43-9147-0FC23E6A3724}"
-  DTS:ExecutableType="SSIS.Package.3"
-  DTS:LastModifiedProductVersion="14.0.3008.28"
-  DTS:LocaleID="3081"
-  DTS:ObjectName="Package"
+  DTS:CreationDate="7/28/2018 3:36:28 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="TRAPPIST-PC"
+  DTS:CreatorName="Trappist-PC\Trappist"
+  DTS:DTSID="{D6EA330D-2277-44C4-BEAC-DD4D6890204F}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.3002.107"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="YesBank"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{53A054D9-AAF4-422C-B3DE-88D4BB5890C1}">
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{CFB316F0-80B4-4E0C-94E1-6D232E57173A}">
   <DTS:Property
-    DTS:Name="PackageFormatVersion">6</DTS:Property>
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Data]"
-      DTS:CreationName="FILE"
-      DTS:DTSID="{7F67950A-AB14-4E00-B373-0344FAFFE075}"
-      DTS:ObjectName="Data">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:FileUsageType="2"
-          DTS:ConnectionString="C:\Data" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{2BF7C137-13C9-460C-ABFC-814CDD4E2381}"
+      DTS:DTSID="{29F04769-FE26-4C22-998E-293197D78214}"
       DTS:ObjectName="Flat File Connection Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
-          DTS:LocaleID="3081"
+          DTS:LocaleID="1033"
           DTS:HeaderRowDelimiter="_x000D__x000A_"
           DTS:ColumnNamesInFirstDataRow="True"
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Data\Book1.csv">
+          DTS:ConnectionString="C:\Data\yesbanktransactions\TransactionDetails_26072018041116_5499954.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -49,8 +38,8 @@
               DTS:MaximumWidth="2000"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Id"
-              DTS:DTSID="{3ACD4369-B15A-4089-A51A-9B95687B4EB2}"
+              DTS:ObjectName="Folio_No"
+              DTS:DTSID="{3E108ABF-7CEC-49F1-B7C4-8EDAE325A7DB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -58,8 +47,8 @@
               DTS:MaximumWidth="2000"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="TargetMappingAttributeId"
-              DTS:DTSID="{524004D1-E70D-4F53-80FA-E436082E5B75}"
+              DTS:ObjectName="Product_Nm"
+              DTS:DTSID="{5C4DBCBC-F3BC-4F2C-B1A8-D430FA47CAC7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -67,8 +56,8 @@
               DTS:MaximumWidth="2000"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="ExecutionOrder"
-              DTS:DTSID="{68584FCF-1388-44F9-9C88-4770754C84DC}"
+              DTS:ObjectName="Tr_Dt"
+              DTS:DTSID="{0EAEDA11-3D61-46A6-AB21-C77EB50E3A76}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -76,8 +65,8 @@
               DTS:MaximumWidth="2000"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Left"
-              DTS:DTSID="{37726FBA-7AB7-4BEF-9871-73FFB5F6BF15}"
+              DTS:ObjectName="Transaction_Name"
+              DTS:DTSID="{15C36C1F-9809-4C8D-A272-3227312D89C3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -85,8 +74,8 @@
               DTS:MaximumWidth="2000"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="LeftType"
-              DTS:DTSID="{FD977333-9516-4B56-B19F-4B5A4D603BD3}"
+              DTS:ObjectName="Units"
+              DTS:DTSID="{68BB8D19-3834-4040-AA28-81F73D8BCD92}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -94,8 +83,8 @@
               DTS:MaximumWidth="2000"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="CompareOperator"
-              DTS:DTSID="{BF1824A6-627A-4B8A-86A7-95C6424F030A}"
+              DTS:ObjectName="NAV"
+              DTS:DTSID="{36A122CA-7F2C-4788-89B0-124B4FC7B6CE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -103,8 +92,8 @@
               DTS:MaximumWidth="2000"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Right"
-              DTS:DTSID="{AABCF42E-1188-457B-9D97-D8CF2BE4E35A}"
+              DTS:ObjectName="Amount"
+              DTS:DTSID="{D97880B5-29FA-48CA-BBC6-C8951D555F13}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -112,8 +101,8 @@
               DTS:MaximumWidth="2000"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="RightType"
-              DTS:DTSID="{58085414-801B-479C-A7B3-4599255C6CB8}"
+              DTS:ObjectName="STT"
+              DTS:DTSID="{079C203A-705B-47C9-8C46-F884C687F7AB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -121,8 +110,35 @@
               DTS:MaximumWidth="2000"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="RelationToNext"
-              DTS:DTSID="{A5D21E15-5DDF-48C9-8CC7-1EB9EFFE8438}"
+              DTS:ObjectName="TDS_Amount"
+              DTS:DTSID="{4354F7B7-BC54-4A35-A47A-D443780E50E8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Exit_Load"
+              DTS:DTSID="{54796579-1E3A-462F-90CC-25953E0BF167}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Net_Amt"
+              DTS:DTSID="{562977C2-C4C3-4B1B-A0D4-8F1475612B9C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="R_Gain"
+              DTS:DTSID="{A91BFD22-C1AB-4615-B1A0-B586FBB51CE1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -130,43 +146,21 @@
               DTS:MaximumWidth="2000"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="ConditionType"
-              DTS:DTSID="{4F1CAB66-87CA-4FFC-8E7C-035213DEA15D}"
+              DTS:ObjectName="PRODUCT_CD"
+              DTS:DTSID="{E36A1F07-F52E-40E2-AB93-886C583B809D}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[L739148P.Int-EWF]"
+      DTS:refId="Package.ConnectionManagers[trappist-pc\sqlexpress.PT]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{F9484F85-CD54-4AD4-8CE1-FDFD9698C7D9}"
-      DTS:ObjectName="L739148P.Int-EWF">
+      DTS:DTSID="{DE3DE567-57F7-4240-8AB7-B29FBD8523CB}"
+      DTS:ObjectName="trappist-pc\sqlexpress.PT">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=L739148P;Initial Catalog=Int-EWF;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Staging]"
-      DTS:CreationName="FILE"
-      DTS:DTSID="{BCEDB005-BA9A-4EB6-91C2-B2CE8728461F}"
-      DTS:ObjectName="Staging">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:FileUsageType="2"
-          DTS:ConnectionString="C:\Data\Staging" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Staging 1]"
-      DTS:CreationName="FILE"
-      DTS:DTSID="{9BEA9752-7B2F-442E-A64C-6FAAA17DC63C}"
-      DTS:ObjectName="Staging 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:FileUsageType="2"
-          DTS:ConnectionString="C:\Data\Staging" />
+          DTS:ConnectionString="Data Source=trappist-pc\sqlexpress;Initial Catalog=PT;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -174,10 +168,10 @@
   <DTS:Executables>
     <DTS:Executable
       DTS:refId="Package\Data Flow Task"
-      DTS:CreationName="SSIS.Pipeline.3"
+      DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{40B7801F-7170-496B-93C0-5ADB7E97018F}"
-      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:DTSID="{F7184C60-E5EE-4077-89E1-9F21CE0679CA}"
+      DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Data Flow Task"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
@@ -188,10 +182,10 @@
           <components>
             <component
               refId="Package\Data Flow Task\Flat File Source"
-              componentClassID="DTSAdapter.FlatFileSource.3"
+              componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
-              localeId="3081"
+              localeId="1033"
               name="Flat File Source"
               usesDispositions="true"
               version="1">
@@ -218,15 +212,15 @@
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Id]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Folio_No]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Id]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Folio_No]"
                       length="2000"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Id]"
-                      name="Id"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Folio_No]"
+                      name="Folio_No"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -240,15 +234,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[TargetMappingAttributeId]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Product_Nm]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TargetMappingAttributeId]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Product_Nm]"
                       length="2000"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[TargetMappingAttributeId]"
-                      name="TargetMappingAttributeId"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Product_Nm]"
+                      name="Product_Nm"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -262,15 +256,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ExecutionOrder]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Tr_Dt]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ExecutionOrder]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Tr_Dt]"
                       length="2000"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ExecutionOrder]"
-                      name="ExecutionOrder"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Tr_Dt]"
+                      name="Tr_Dt"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -284,15 +278,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Left]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Transaction_Name]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Left]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Transaction_Name]"
                       length="2000"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Left]"
-                      name="Left"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Transaction_Name]"
+                      name="Transaction_Name"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -306,15 +300,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[LeftType]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Units]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LeftType]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Units]"
                       length="2000"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[LeftType]"
-                      name="LeftType"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Units]"
+                      name="Units"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -328,15 +322,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CompareOperator]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[NAV]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CompareOperator]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NAV]"
                       length="2000"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CompareOperator]"
-                      name="CompareOperator"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[NAV]"
+                      name="NAV"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -350,15 +344,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Right]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Amount]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Right]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Amount]"
                       length="2000"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Right]"
-                      name="Right"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Amount]"
+                      name="Amount"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -372,15 +366,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[RightType]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[STT]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[RightType]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[STT]"
                       length="2000"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[RightType]"
-                      name="RightType"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[STT]"
+                      name="STT"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -394,15 +388,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[RelationToNext]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[TDS_Amount]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[RelationToNext]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TDS_Amount]"
                       length="2000"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[RelationToNext]"
-                      name="RelationToNext"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[TDS_Amount]"
+                      name="TDS_Amount"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -416,15 +410,81 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ConditionType]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Exit_Load]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ConditionType]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Exit_Load]"
                       length="2000"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ConditionType]"
-                      name="ConditionType"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Exit_Load]"
+                      name="Exit_Load"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Net_Amt]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Net_Amt]"
+                      length="2000"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Net_Amt]"
+                      name="Net_Amt"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[R_Gain]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[R_Gain]"
+                      length="2000"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[R_Gain]"
+                      name="R_Gain"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PRODUCT_CD]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PRODUCT_CD]"
+                      length="2000"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PRODUCT_CD]"
+                      name="PRODUCT_CD"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -441,65 +501,83 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Id]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Folio_No]"
                       codePage="1252"
                       dataType="str"
                       length="2000"
-                      name="Id" />
+                      name="Folio_No" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TargetMappingAttributeId]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Product_Nm]"
                       codePage="1252"
                       dataType="str"
                       length="2000"
-                      name="TargetMappingAttributeId" />
+                      name="Product_Nm" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ExecutionOrder]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Tr_Dt]"
                       codePage="1252"
                       dataType="str"
                       length="2000"
-                      name="ExecutionOrder" />
+                      name="Tr_Dt" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Left]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Transaction_Name]"
                       codePage="1252"
                       dataType="str"
                       length="2000"
-                      name="Left" />
+                      name="Transaction_Name" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LeftType]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Units]"
                       codePage="1252"
                       dataType="str"
                       length="2000"
-                      name="LeftType" />
+                      name="Units" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CompareOperator]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NAV]"
                       codePage="1252"
                       dataType="str"
                       length="2000"
-                      name="CompareOperator" />
+                      name="NAV" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Right]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Amount]"
                       codePage="1252"
                       dataType="str"
                       length="2000"
-                      name="Right" />
+                      name="Amount" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[RightType]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[STT]"
                       codePage="1252"
                       dataType="str"
                       length="2000"
-                      name="RightType" />
+                      name="STT" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[RelationToNext]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TDS_Amount]"
                       codePage="1252"
                       dataType="str"
                       length="2000"
-                      name="RelationToNext" />
+                      name="TDS_Amount" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ConditionType]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Exit_Load]"
                       codePage="1252"
                       dataType="str"
                       length="2000"
-                      name="ConditionType" />
+                      name="Exit_Load" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Net_Amt]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2000"
+                      name="Net_Amt" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[R_Gain]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2000"
+                      name="R_Gain" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PRODUCT_CD]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2000"
+                      name="PRODUCT_CD" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -533,7 +611,7 @@
             </component>
             <component
               refId="Package\Data Flow Task\OLE DB Destination"
-              componentClassID="DTSAdapter.OLEDBDestination.3"
+              componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
               name="OLE DB Destination"
@@ -547,7 +625,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[OLE DB Destination]</property>
+                  name="OpenRowset">[YesBankTransactions]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -556,7 +634,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -581,7 +659,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                  name="FastLoadOptions"></property>
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
@@ -590,8 +668,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[L739148P.Int-EWF]"
-                  connectionManagerRefId="Package.ConnectionManagers[L739148P.Int-EWF]"
+                  connectionManagerID="Package.ConnectionManagers[trappist-pc\sqlexpress.PT]"
+                  connectionManagerRefId="Package.ConnectionManagers[trappist-pc\sqlexpress.PT]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -604,148 +682,190 @@
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Id]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Folio_No]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="2000"
-                      cachedName="Id"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Id]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Id]" />
+                      cachedName="Folio_No"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Folio_No]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Folio_No]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TargetMappingAttributeId]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Product_Nm]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="2000"
-                      cachedName="TargetMappingAttributeId"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TargetMappingAttributeId]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[TargetMappingAttributeId]" />
+                      cachedName="Product_Nm"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Product_Nm]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Product_Nm]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ExecutionOrder]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Tr_Dt]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="2000"
-                      cachedName="ExecutionOrder"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ExecutionOrder]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ExecutionOrder]" />
+                      cachedName="Tr_Dt"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Tr_Dt]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Tr_Dt]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Left]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Transaction_Name]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="2000"
-                      cachedName="Left"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Left]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Left]" />
+                      cachedName="Transaction_Name"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Transaction_Name]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Transaction_Name]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LeftType]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Units]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="2000"
-                      cachedName="LeftType"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LeftType]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[LeftType]" />
+                      cachedName="Units"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Units]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Units]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CompareOperator]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NAV]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="2000"
-                      cachedName="CompareOperator"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CompareOperator]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CompareOperator]" />
+                      cachedName="NAV"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NAV]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[NAV]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Right]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Amount]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="2000"
-                      cachedName="Right"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Right]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Right]" />
+                      cachedName="Amount"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Amount]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Amount]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[RightType]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[STT]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="2000"
-                      cachedName="RightType"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RightType]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[RightType]" />
+                      cachedName="STT"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[STT]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[STT]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[RelationToNext]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TDS_Amount]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="2000"
-                      cachedName="RelationToNext"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RelationToNext]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[RelationToNext]" />
+                      cachedName="TDS_Amount"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TDS_Amount]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[TDS_Amount]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ConditionType]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Exit_Load]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="2000"
-                      cachedName="ConditionType"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ConditionType]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ConditionType]" />
+                      cachedName="Exit_Load"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Exit_Load]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Exit_Load]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Net_Amt]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2000"
+                      cachedName="Net_Amt"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Net_Amt]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Net_Amt]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[R_Gain]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2000"
+                      cachedName="R_Gain"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[R_Gain]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[R_Gain]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PRODUCT_CD]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2000"
+                      cachedName="PRODUCT_CD"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PRODUCT_CD]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PRODUCT_CD]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Id]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Folio_No]"
                       codePage="1252"
                       dataType="str"
                       length="2000"
-                      name="Id" />
+                      name="Folio_No" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TargetMappingAttributeId]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Product_Nm]"
                       codePage="1252"
                       dataType="str"
                       length="2000"
-                      name="TargetMappingAttributeId" />
+                      name="Product_Nm" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ExecutionOrder]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Tr_Dt]"
                       codePage="1252"
                       dataType="str"
                       length="2000"
-                      name="ExecutionOrder" />
+                      name="Tr_Dt" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Left]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Transaction_Name]"
                       codePage="1252"
                       dataType="str"
                       length="2000"
-                      name="Left" />
+                      name="Transaction_Name" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LeftType]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Units]"
                       codePage="1252"
                       dataType="str"
                       length="2000"
-                      name="LeftType" />
+                      name="Units" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CompareOperator]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NAV]"
                       codePage="1252"
                       dataType="str"
                       length="2000"
-                      name="CompareOperator" />
+                      name="NAV" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Right]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Amount]"
                       codePage="1252"
                       dataType="str"
                       length="2000"
-                      name="Right" />
+                      name="Amount" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RightType]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[STT]"
                       codePage="1252"
                       dataType="str"
                       length="2000"
-                      name="RightType" />
+                      name="STT" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RelationToNext]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TDS_Amount]"
                       codePage="1252"
                       dataType="str"
                       length="2000"
-                      name="RelationToNext" />
+                      name="TDS_Amount" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ConditionType]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Exit_Load]"
                       codePage="1252"
                       dataType="str"
                       length="2000"
-                      name="ConditionType" />
+                      name="Exit_Load" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Net_Amt]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2000"
+                      name="Net_Amt" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[R_Gain]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2000"
+                      name="R_Gain" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PRODUCT_CD]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2000"
+                      name="PRODUCT_CD" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -791,7 +911,7 @@
 <!--If you manually edit this section and make a mistake, you can delete it. -->
 <!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
 <Objects
-  Version="sql11">
+  Version="sql12">
   <!--Each node below will contain properties that do not affect runtime behavior.-->
   <Package
     design-time-name="Package">
@@ -801,7 +921,7 @@
         <NodeLayout
           Size="152,41.6"
           Id="Package\Data Flow Task"
-          TopLeft="35.5,35.5" />
+          TopLeft="5.5,5.5" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -809,7 +929,7 @@
     design-time-name="Package\Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssge="clr-namespace:Microsoft.SqlServer.Graph.Extended;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
         <NodeLayout
           Size="152,41.6"
           Id="Package\Data Flow Task\Flat File Source"
@@ -817,33 +937,33 @@
         <NodeLayout
           Size="172,41.6"
           Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="31.4999999318804,121.147060024697" />
+          TopLeft="23.4999997956412,111.358824593303" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Flat File Source Output]"
           TopLeft="81.5,47.1">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="35.9999999318804,74.0470600246971"
+              StartConnector="{x:Null}"
+              EndConnector="27.9999997956412,64.2588245933031"
               Start="0,0"
-              End="35.9999999318804,66.5470600246971">
+              End="27.9999997956412,56.7588245933031">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.0235300123485" />
+                    End="0,28.1294122966516" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,33.0235300123485"
-                    Point2="0,37.0235300123485"
-                    Point3="4,37.0235300123485" />
+                    Point1="0,28.1294122966516"
+                    Point2="0,32.1294122966516"
+                    Point3="4,32.1294122966516" />
                   <mssgle:LineSegment
-                    End="31.9999999318804,37.0235300123485" />
+                    End="23.9999997956412,32.1294122966516" />
                   <mssgle:CubicBezierSegment
-                    Point1="31.9999999318804,37.0235300123485"
-                    Point2="35.9999999318804,37.0235300123485"
-                    Point3="35.9999999318804,41.0235300123485" />
+                    Point1="23.9999997956412,32.1294122966516"
+                    Point2="27.9999997956412,32.1294122966516"
+                    Point3="27.9999997956412,36.1294122966516" />
                   <mssgle:LineSegment
-                    End="35.9999999318804,66.5470600246971" />
+                    End="27.9999997956412,56.7588245933031" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -852,6 +972,21 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <AnnotationLayout
+          Text="s"
+          ParentId="Package\Data Flow Task"
+          Size="35.2,60"
+          Id="7b7b6385-5a91-47c9-a798-be9d993ee01e"
+          TopLeft="262.857147333573,101.552942600712">
+          <AnnotationLayout.FontInfo>
+            <mssge:FontInfo
+              Color="#FFF1F1F1">
+              <mssge:FontInfo.TextDecorations>
+                <av:TextDecorationCollection />
+              </mssge:FontInfo.TextDecorations>
+            </mssge:FontInfo>
+          </AnnotationLayout.FontInfo>
+        </AnnotationLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
