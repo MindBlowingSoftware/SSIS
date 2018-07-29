@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="iciciNro"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{89B1267D-5DAA-425E-8456-0E0F0F36978A}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{78F2639D-E7C7-46E6-BA69-FD504766D2D9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -499,6 +499,170 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 3]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{A46D5D64-1FD2-40E2-BFDC-399B16685436}"
+      DTS:ObjectName="Flat File Connection Manager 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\Trappist\Downloads\7510019284_PortFolioMF.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fund"
+              DTS:DTSID="{9CB3596E-CA32-4F93-BCEC-7F8D95556F81}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Scheme"
+              DTS:DTSID="{59ADAAA3-CA1E-45C2-A995-EA2F70AABDF8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Category"
+              DTS:DTSID="{A6D58D5C-53DA-4EBD-81F0-F2FFE338BE82}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sub Category"
+              DTS:DTSID="{80494904-00BB-4AF4-8EAF-53B04AE2E266}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Rating"
+              DTS:DTSID="{A624B94F-5E6C-4363-A10D-730143279C4B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Units Held"
+              DTS:DTSID="{266721C6-8B2B-4FCE-A776-D401EDC431DA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Average Cost Price"
+              DTS:DTSID="{86C916DF-3C43-4724-B79D-0B3A68454F5B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Value At Cost"
+              DTS:DTSID="{80271286-0327-4972-AAF0-4254328A60E5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Last Recorded NAV On"
+              DTS:DTSID="{1E612B67-1A29-4933-B336-713878459A9C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Last Recorded NAV *"
+              DTS:DTSID="{BA9F6AA8-F96E-408B-8F8A-3A0E5D92FCD4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Value at NAV"
+              DTS:DTSID="{56C54B06-1F07-4840-A867-8FFE3EE02B15}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Realized Profit Loss"
+              DTS:DTSID="{B4E4328C-B637-422E-9235-A3C00DF5DDE8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Profit  Loss"
+              DTS:DTSID="{1E6D1262-8124-4E84-AFCC-0506351D158A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Profit  Loss %"
+              DTS:DTSID="{A0FEB8DE-5821-4A5A-8B25-EB6FA60317C6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Research Recommends"
+              DTS:DTSID="{65DD0783-0431-4797-8C79-03B6255EF7FC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="2000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 15"
+              DTS:DTSID="{7244D5F2-0418-44F8-ACAA-1FA4BBED545B}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[trappist-pc\sqlexpress.PT]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{D4481B6B-56BE-4EFF-82F0-614B04E56769}"
@@ -547,8 +711,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 2]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 3]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -1337,6 +1501,10 @@
                       dataType="str"
                       length="2000"
                       name="Column 15" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Id]"
+                      dataType="i8"
+                      name="Id" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -1400,41 +1568,29 @@
     design-time-name="Package\Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="152,41.6"
-          Id="Package\Data Flow Task\Flat File Source"
-          TopLeft="65.5,65.5" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="172,41.6"
           Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="74.3571424970822,137.711765297886" />
+          TopLeft="74.3571424970822,151.782353730515" />
+        <NodeLayout
+          Size="152,41.6"
+          Id="Package\Data Flow Task\Flat File Source"
+          TopLeft="78.6428573666787,0.0411755525529465" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="141.5,107.1">
+          TopLeft="157.49999993188,41.641175552553">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="18.8571424970822,30.6117652978864"
+              StartConnector="{assembly:Null}"
+              EndConnector="0,110.141178177962"
               Start="0,0"
-              End="18.8571424970822,23.1117652978864">
+              End="0,102.641178177962">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,11.3058826489432" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,11.3058826489432"
-                    Point2="0,15.3058826489432"
-                    Point3="4,15.3058826489432" />
-                  <mssgle:LineSegment
-                    End="14.8571424970822,15.3058826489432" />
-                  <mssgle:CubicBezierSegment
-                    Point1="14.8571424970822,15.3058826489432"
-                    Point2="18.8571424970822,15.3058826489432"
-                    Point3="18.8571424970822,19.3058826489432" />
-                  <mssgle:LineSegment
-                    End="18.8571424970822,23.1117652978864" />
+                    End="0,102.641178177962" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
